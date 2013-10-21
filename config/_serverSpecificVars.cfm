@@ -7,7 +7,7 @@
 <!--------------------------------- 
 PUT PRODUCTION OR DEFAULT CODE HERE
  --------------------------------->
-<skin:registerJS id="chelsea" baseHREF="/js" lFiles="jquery-1.7.2.min.js,application.js,bootstrap.js,placeholder.js" bcombine="true" />
+<skin:registerJS id="chelsea" baseHREF="/js" lFiles="jquery-1.7.2.min.js,application.js,bootstrap.js" bcombine="false" />
 
 <!--------------------------------------------------- 
 PUT DEVELOPER OR STAGING/TESTING SPECIFIC CODE BELOW

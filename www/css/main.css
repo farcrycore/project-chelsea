@@ -1,7 +1,6 @@
 body {
   background:#f5f5f5;
   min-height:100%;
-  font-size: 16px !important;
 }
 .wrapper {
   padding-top:80px;
@@ -67,7 +66,7 @@ body {
 .main {
   background:#ffffff;
   margin:0 auto;
-  padding:0 0 30px;
+  padding:0;
   position:relative;
   width:980px;
   z-index:3;
@@ -79,6 +78,9 @@ body {
   position:relative;
 }
 .main .section {
+  padding-bottom:30px;
+}
+.main .section:first-child {
   padding-top:30px;
 }
 .main .section:first-child .page-header {
@@ -97,13 +99,14 @@ body {
 .footer {
   color:#a7a9aa;
   font-size:11px;
-  padding-top:60px;
+  margin-top:60px;
 }
 .footer p {
   margin-bottom:0;
 }
 .footer .main {
   padding-top:30px;
+  padding-bottom:30px;
 }
 .footer .footer-logo {
   margin-top:20px;
@@ -256,15 +259,20 @@ body {
 /*********
  misc
  *********/
-.affix {
-  top:70px;
-  bottom:auto;
-}
-.affix-bottom {
-  position:fixed;
-    top:auto;
-    bottom:233px;
-}
+/* affix */
+  .nav-side.affix {
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+    top:70px;
+    bottom:auto;
+  }
+  .nav-side.affix-bottom {
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+    position:absolute;
+      top:auto;
+      bottom:30px;
+  }
 .btn-bottom-align {
   padding-top:40px;
 }
@@ -342,8 +350,11 @@ body {
   .nav-side .nav {
     width:166px;
   }
-  .affix {
-    top:30px;
+  .nav-side.affix,
+  .nav-side.affix-bottom {
+    padding-top:30px !important;
+    padding-bottom:30px !important;
+    position:static;
   }
 }
 @media (max-width:767px) {
@@ -356,9 +367,6 @@ body {
   }
   .nav-side .nav {
     width:auto;
-  }
-  .affix {
-    position:static;
   }
   .btn-bottom-align {
     margin-bottom:20px;

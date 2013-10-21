@@ -1,6 +1,6 @@
 <cfsetting enablecfoutputonly="true">
 <!--- @@displayname: Standard Body --->
-<!--- @@postprocess: youtube(width=720,height=405);vimeo(width=720,height=405) --->
+<!--- @@postprocess: youtube(width=720,height=405);vimeo(width=720,height=405);twitter --->
 
 <cfoutput>
 	<div class="page-header">

@@ -5,11 +5,15 @@
 <!--- import tag libraries --->
 <cfimport taglib="/farcry/core/tags/webskin" prefix="skin" />
 
-<skin:onReady>
+<skin:htmlhead>
 	<cfoutput>
+	<script>
+	$(function(){		
 		$('.carousel').carousel();
+	});
+	</script>
 	</cfoutput>
-</skin:onReady>
+</skin:htmlhead>
 
 <cfoutput>
 	<div class="carousel slide" id="carousel">

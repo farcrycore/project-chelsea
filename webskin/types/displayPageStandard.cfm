@@ -16,13 +16,13 @@
 					class="nav nav-tabs nav-stacked"
 					navID="#request.navID#"
 					functionMethod="getBloodLine"
-					functionArgs="bIncludeSelf=""true"",depth=1,joinTable=""dmNavigation"" "
-					depth="3"
+					functionArgs="joinTable=""dmNavigation"" "
+					depth="2"
 					bActive="true"
 					startLevel="2"
 					bSpan="true"
 					bincludehome="false"
-					bincludeself="true"
+					bincludeself="false"
 					/>			
 					
 				<cfoutput>
