@@ -16,10 +16,6 @@
 		</div><!-- /img-holder thumbnail -->
 	</cfif>
 	
-	<cfif len(stObj.leadin)>
-		<p class="lead">#stObj.leadin#</p>
-	</cfif>
-	
 	#stObj.body#
 </cfoutput>
 
