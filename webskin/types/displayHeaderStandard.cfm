@@ -15,7 +15,7 @@
 	<html>
 		<head>
 			<meta charset="utf-8">
-			<title>#stParam.title# | EA Demo</title>
+			<title>#stParam.title# | #application.displayname#</title>
 			<link rel="stylesheet" href="/css/bootstrap.css" />
 			<link rel="stylesheet" href="/css/main.css" />
 			<!--[if lt IE 9]>
@@ -27,7 +27,7 @@
 			<div class="navbar navbar-fixed-top">
 				<div class="navbar-inner">
 					<div class="container">
-						<a href="/" class="brand">EA Demo</a>
+						<a href="/" class="brand">#application.displayname#</a>
 						<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
