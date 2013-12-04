@@ -1,7 +1,12 @@
 <cfcomponent extends="farcry.plugins.farcrycms.packages.types.dmNews">
 
-	<cfproperty 
-		name="leadin" type="string" hint="News title." required="no" default="" 
-		ftseq="2" ftfieldset="General Details" ftwizardStep="General Details" ftlabel="Lead-in" ftHint="An optional secondary title for this article." />
+<!--- 
+	Chelsea Boot Theme; 
+		we only want one choice of News content layout, so always 
+		default to displayPageStandard 
+--->
+<cfproperty 
+	name="displayMethod" type="string" hint="Display method to render." required="yes" default="displayPageStandard" />
+
 
 </cfcomponent>
