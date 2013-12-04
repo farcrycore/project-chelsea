@@ -1,9 +1,15 @@
 <cfimport taglib="/farcry/core/tags/farcry" prefix="farcry" />
 
-<!--- Set up the application. --->	
-<cfset THIS.Name = "ea" />
-<cfset THIS.displayName = "ea" />
+<!--- 
+ // APPLICATION NAME
+--------------------------------------------------------------------------------->
+<cfset THIS.Name = "chelsea" />
+<cfset THIS.displayName = "Chelsea Boots" />
 
+
+<!--- 
+ // COLDFUSION ENGINE SETTINGS
+--------------------------------------------------------------------------------->
 <cfset THIS.sessionmanagement = true  />
 <cfset THIS.sessiontimeout = createTimeSpan(0,0,20,0) />
 <cfset THIS.applicationtimeout = createTimeSpan(2,0,0,0) />
@@ -15,44 +21,56 @@
 <cfset THIS.setdomaincookies = true />
 <cfset THIS.mappings = structNew() />
 
-<!--- FARCRY SPECIFIC --->
-<cfset THIS.locales = "en_AU" />
-<cfset THIS.dsn = "ea" /> 
-<cfset THIS.dbType = "mysql" /> 
-<cfset THIS.dbOwner = "" /> 
-<!--- <cfset THIS.plugins = "farcrycms,googleud,googleAnalytics,cloudinary" />  --->
-<cfset THIS.plugins = "farcrycms" />
-
-<farcry:machineSpecific name="Greyhame.local,greyhame.daemon.com.au">
-	<!--- GB: Local MacBook Air --->
-	<cfset this.dsn = "ea-local" />
-</farcry:machineSpecific>	
 
 <!--- 
-THE VIRTUAL WEBSERVER PROJECT FOLDER
- --->
+ // FARCRY FRAMEWORK SETTINGS
+--------------------------------------------------------------------------------->
+<cfset THIS.locales = "en_AU" /><!--- comma delimited list of supported locales --->
+<cfset THIS.dsn = "chelsea" /> 
+<cfset THIS.dbType = "mysql" /> 
+<cfset THIS.dbOwner = "" /> 
+
+
+<!--- 
+ // PLUGINS 
+ 	list of registered plugins for the app; loaded in order
+--------------------------------------------------------------------------------->
+<cfset THIS.plugins = "farcrycms" /> 
+<!--- <cfset THIS.plugins = "farcrycms,googleud,googleAnalytics,cloudinary" />  --->
+
+
+<!--- 
+ // MACHINE SPECIFIC SETTINGS
+ 	- production settings should be nominated above
+ 	- any local settings can be made below for specific machine names
+--------------------------------------------------------------------------------->
+<farcry:machineSpecific name="Greyhame.local,greyhame.daemon.com.au">
+	<!--- GB: Local MacBook Air --->
+	<cfset this.dsn = "chelsea-local" />
+</farcry:machineSpecific>
+
+
+<!--- 
+ // PROJECT SETTINGS
+
+ projectDirectoryName
+ 	folder that contains your farcry project; only needed if different to the app name
+ projectURL
+ 	the url stem of your app; blank unless a sub-directory install
+ webtop url
+ 	the url stem of your admin webtop
+--------------------------------------------------------------------------------->
+<!--- <cfset THIS.projectDirectoryName = "myproject" /> --->
 <cfset THIS.projectURL = "" />
 <cfset THIS.webtopURL = "/farcry/core/webtop" />
 
-<cfset THIS.plugins = "farcrycms" /> 
-
 
 <!--- 
-A key that can be used on updateapp url variable to update the application scope
-Only administrators can updateapp=1
- --->
-<cfset THIS.updateappKey = "daemon" />
-
-<!--- 
-THE NAME OF THE FOLDER THAT CONTAINS YOUR FARCRY PROJECT
-SET THIS VALUE IF IT IS DIFFERENT FROM THE APPLICATION NAME
- --->
-<!--- <cfset THIS.projectDirectoryName = "myproject" /> --->
-
-
-<!--- Define the page request properties. --->
-
-<!--- <cfsetting requesttimeout="30" /> --->
-<!--- <cfsetting showdebugoutput="true" /> --->
-<!--- <cfsetting enablecfoutputonly="true" /> --->
+ // PROJECT KEY 
+	- used to protect framework directives that can be invoked from the url
+	- for example; 
+		?updateapp=projectkey
+		?updateall=projectkey
+--------------------------------------------------------------------------------->
+<cfset THIS.updateappKey = "chelsea" />
 
