@@ -1,6 +1,5 @@
 <cfsetting enablecfoutputonly="true">
-
-<!--- @@author: Frank Brea (frank@daemon.com.au)--->
+<!--- @@displayname: Carousel Slide Case --->
 
 <!--- import tag libraries --->
 <cfimport taglib="/farcry/core/tags/webskin" prefix="skin" />
