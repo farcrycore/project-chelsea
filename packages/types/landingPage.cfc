@@ -10,11 +10,11 @@
 		ftSeq="1" ftFieldset="Home Page" ftLabel="Title">
 
 	<cfproperty name="aCarouselItems" type="array" required="false"
-		ftSeq="2" ftFieldset="Home Page" ftLabel="Carousel"
-		ftType="array" ftJoin="dmCarouselItem">
+		ftSeq="2" ftFieldset="Home Page" ftLabel="Carousel Slides"
+		ftType="array" ftJoin="dmCarouselItem" ftAllowEdit="true">
 
 	<cfproperty name="aTouts" type="array" required="false"
-		ftSeq="3" ftFieldset="Home Page" ftLabel="Touts"
-		ftType="array" ftJoin="dmTout">
+		ftSeq="3" ftFieldset="Home Page" ftLabel="Promotional Touts"
+		ftType="array" ftJoin="dmTout" ftAllowEdit="true">
 
 </cfcomponent>

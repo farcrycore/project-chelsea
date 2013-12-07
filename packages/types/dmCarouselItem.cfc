@@ -1,6 +1,7 @@
 <cfcomponent extends="farcry.core.packages.types.types"
 	displayname="Carousel Items" 
-	hint="Create carousel items for just about anything.">
+	hint="Create carousel items for just about anything."
+	icon="fa-step-forward">
 
 	<cfproperty name="title" type="string"
 		ftSeq="1" ftFieldset="Carousel Slide" ftLabel="Title"
