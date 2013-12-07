@@ -4,7 +4,7 @@
 
 <cfoutput>
 	<div class="item<cfif stParam.activeID EQ stObj.objectID> active</cfif>">
-		<img src="#getFileLocation(stobject=stobj, fieldname="imageCarousel").path#" alt="">
+		<img src="#getFileLocation(stobject=stobj, fieldname="imgCarousel").path#" alt="">
 		<div class="carousel-caption">
 			<cfif isValid("UUID",stObj.link)>
 				<h4><a href="#application.fapi.getLink(objectID=stObj.link,typename="dmNavigation")#">#stObj.title#</a></h4>
