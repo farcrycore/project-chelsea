@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <webtop>
 	<section mergeType="merge" id="content">
-		<subsection id="farcrycmssubsection" sequence="5" label="CMS Content">
-			<menu id="farcrycmsmenu" sequence="10" label="Content Types">
-				<menuitem id="listdmtout" sequence="50" label="Touts" link="/admin/customadmin.cfm?module=basic/basicadmin.cfm&amp;contenttype=dmTout" relatedtype="dmTout" />
-				<menuitem id="listdmcarousel" sequence="60" label="Carousel" link="/admin/customadmin.cfm?module=basic/basicadmin.cfm&amp;contenttype=dmCarouselItem" relatedtype="dmCarouselItem" />
+		<subsection id="chelsea" sequence="5" label="Project Content">
+			<menu id="chelseamenu" sequence="10" label="Home Page">
+				<menuitem id="chelseaCarousel" sequence="10" label="Carousel" typename="dmCarouselItem" />
+				<menuitem id="chelseaTout" sequence="20" label="Touts" typename="dmTout" />
 			</menu>
 		</subsection>
 	</section>

@@ -1,29 +1,39 @@
-<cfcomponent displayname="Carousel Items" hint="Create carousel items for just about anything." extends="farcry.core.packages.types.types">
+<cfcomponent extends="farcry.core.packages.types.types"
+	displayname="Carousel Items" 
+	hint="Create carousel items for just about anything.">
 
 	<cfproperty name="title" type="string"
-		ftSeq="1" ftFieldset="General Details" ftLabel="Title"
-		ftHint="Provide a title for this carousel item.">
+		ftSeq="1" ftFieldset="Carousel Slide" ftLabel="Title"
+		ftHint="Title for the carousel slide.">
 
 	<cfproperty name="teaser" type="string"
-		ftSeq="2" ftFieldset="General Details" ftLabel="Teaser"
-		ftType="longchar"
+		ftSeq="2" ftFieldset="Carousel Slide" ftLabel="Teaser"
+		ftType="longchar" ftlimit="300"
 		ftValidation="required"	/>
 
-	<cfproperty name="imageSourceID" type="UUID"
-		ftSeq="4" ftFieldset="General Details" ftLabel="Source Image"
+	<cfproperty name="imgSourceID" type="UUID"
+		ftSeq="4" ftFieldset="Carousel Slide" ftLabel="Source Image"
 		ftType="uuid" ftJoin="dmImage"
 		ftHint="Select an image from the image library or create a new image.">
 
-	<cfproperty name="imageCarousel" type="string"
-		ftSeq="6" ftFieldset="General Details" ftLabel="Carousel Image"
-		ftType="image" ftDestination="/images/dmCarouselItem/imageCarousel"
-		ftAllowUpload="false" ftSourceField="imageSourceID:SourceImage"
+	<cfproperty name="imgCarousel" type="string"
+		ftSeq="6" ftFieldset="Carousel Slide" ftLabel="Carousel Image"
+		ftType="image" ftDestination="/images/CarouselItem/imgCarousel"
+		ftAllowUpload="false" ftSourceField="imgSourceID:SourceImage"
 		ftAutoGenerateType="center" ftImageWidth="1170" ftImageHeight="377"
+		ftQuality="0.8" ftInterpolation="blackman">
+
+	<cfproperty name="imgCarouselThumb" type="string"
+		ftSeq="6" ftFieldset="Carousel Slide" ftLabel="Carousel Thumb"
+		ftType="image" ftDestination="/images/CarouselItem/imgCarouselThumb"
+		ftAllowUpload="false" ftSourceField="imgSourceID:SourceImage"
+		ftAutoGenerateType="center" ftImageWidth="235" ftImageHeight="75"
 		ftQuality="0.8" ftInterpolation="blackman">
 		
 	<cfproperty 
-		name="link" type="UUID" hint="Title Link" required="no" default="" 
-		ftseq="9" ftfieldset="Link Details" ftlabel="Link" ftHint="Select a link from farcry" 
+		name="link" type="UUID" hint="Content link." required="no" default="" 
+		ftseq="9" ftfieldset="Carousel Slide" ftlabel="Link" 
+		ftHint="Select web page to link to." 
 		ftType="UUID" ftJoin="dmNavigation,dmNews" ftAllowCreate="false"  />
 
 </cfcomponent>
