@@ -16,6 +16,7 @@
 		<head>
 			<meta charset="utf-8">
 			<title>#stParam.title# | #application.displayname#</title>
+			<skin:seo stobject="#stobj#">
 			<link rel="stylesheet" href="/css/bootstrap.css" />
 			<link rel="stylesheet" href="/css/main.css" />
 			<!--[if lt IE 9]>
