@@ -2,7 +2,6 @@
 <!--- @@displayname: Standard --->
 
 <cfimport taglib="/farcry/core/tags/webskin" prefix="skin" />
-<cfimport taglib="/farcry/core/tags/container" prefix="con" />
 
 <skin:view objectid="#stobj.objectid#" typename="#stobj.typename#" webskin="displayHeaderStandard">
 <skin:view objectid="#request.navid#" typename="dmNavigation" webskin="displayBanner" />
@@ -31,7 +30,7 @@
 			<div class="section">
 				</cfoutput>
 				
-			<con:container label="#stObj.objectID#_Sidebar" />
+
 				
 				<cfoutput>
 			</div>
