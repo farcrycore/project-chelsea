@@ -6,6 +6,7 @@
 
 <cfoutput>
 	<div class="page-header">
+		<skin:breadcrumb separator="/" objectid="#application.fapi.getNavID("dmNews")#" includeSelf="true" />
 		<h1>#stObj.title#</h1>
 		<p><small>#dateformat(stObj.publishDate, "d Mmm yyyy")#</small></p>
 	</div><!-- /page-header -->

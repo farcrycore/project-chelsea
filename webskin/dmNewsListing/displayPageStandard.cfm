@@ -14,6 +14,10 @@
 	<div class="row">
 		<div class="span9">
 			<div class="section">
+					<div class="page-header">
+					<skin:breadcrumb separator="/" />
+						<h2>#stObj.title#</h2>
+					</div><!-- /page-header -->
 				</cfoutput>
 
 				<skin:pagination paginationID="" query="qNews" r_stObject="stNews" linksWebskin="displayLinksBootstrap" recordsPerPage="10" top="false" bottom="true">
