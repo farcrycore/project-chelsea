@@ -44,7 +44,7 @@
  	- production settings should be nominated above
  	- any local settings can be made below for specific machine names
 --------------------------------------------------------------------------------->
-<farcry:machineSpecific name="Greyhame.local,greyhame.daemon.com.au">
+<farcry:machineSpecific name="Greyhame.local,greyhame.daemon.com.au,greyhame.bigpond">
 	<!--- GB: Local MacBook Air --->
 	<cfset this.dsn = "chelsea-local" />
 </farcry:machineSpecific>
