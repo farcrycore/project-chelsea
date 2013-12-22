@@ -7,15 +7,9 @@
 <cfoutput>
 	<div class="page-header">
 		<skin:breadcrumb separator="/" objectid="#application.fapi.getNavID("dmNews")#" includeSelf="true" />
-		<h1>#stObj.title#</h1>
-		<p><small>#dateformat(stObj.publishDate, "d Mmm yyyy")#</small></p>
+		<h2>#stObj.title#</h2>
+		<p><span class="date">#application.fapi.prettyDate(stObj.publishDate)#</span></p>
 	</div><!-- /page-header -->
-	
-	<cfif isValid("UUID",stObj.teaserImage)>
-		<div class="img-holder thumbnail">
-			<skin:view objectID="#stObj.teaserImage#" webskin="displayStandardImage" typename="dmImage" />
-		</div><!-- /img-holder thumbnail -->
-	</cfif>
 	
 	#stObj.body#
 </cfoutput>
