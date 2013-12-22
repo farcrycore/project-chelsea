@@ -1,6 +1,7 @@
 <cfsetting enablecfoutputonly="true" /> 
 <!--- @@displayname: News Listing --->
 
+<!--- import tag library --->
 <cfimport taglib="/farcry/core/tags/webskin" prefix="skin" />
 
 <!--- get news query based on listing parameters --->
@@ -15,7 +16,7 @@
 		<div class="span9">
 			<div class="section">
 					<div class="page-header">
-					<skin:breadcrumb separator="/" />
+						<skin:breadcrumb separator="/" />
 						<h2>#stObj.title#</h2>
 					</div><!-- /page-header -->
 				</cfoutput>

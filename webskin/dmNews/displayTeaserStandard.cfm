@@ -1,7 +1,5 @@
 <cfsetting enablecfoutputonly="true">
 <!--- @@displayname: News Teaser --->
-<!--- @@author: Frank Brea (frank@daemon.com.au) --->
-<!--- @@cacheStatus: 1 --->
 
 <!--- import tag libraries --->
 <cfimport taglib="/farcry/core/tags/webskin" prefix="skin">
