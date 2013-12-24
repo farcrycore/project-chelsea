@@ -22,6 +22,7 @@ TODO:
 		<ul class="nav nav-list">
 			<li class="nav-header">Categories</li>
 			<li class="divider"></li>
+			<li><skin:buildlink objectID="#stparam.pageID#" typename="#stparam.pageType#" linktext="All" /></li>
 			</cfoutput>
 			
 			<cfloop list="#getCategoryBranchAsList(lCategoryIDs=stlocal.catid)#" index="i">

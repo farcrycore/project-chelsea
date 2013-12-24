@@ -7,6 +7,7 @@
 <!--- get news query based on listing parameters --->
 <cfparam name="url.cat" default="#stobj.catNews#">
 <cfset qNews = getNews(bMatchAllKeywords=stobj.bMatchAllKeywords, category=url.cat) />
+<!--- set category highlight if filtering --->
 <cfif structkeyexists(url, "cat") AND listlen(url.cat) eq 1>
 	<cfset stLocal.pageCat = url.cat>
 <cfelse>
@@ -23,9 +24,6 @@
 					<div class="page-header">
 						<skin:breadcrumb separator="/" />
 						<h2>#stObj.title#</h2>
-						<cfif len(stlocal.pagecat)>
-							<p>Filtered by <strong>#application.fapi.getContentObject(objectid=stlocal.pageCat, typename="dmcategory").categorylabel#</strong></p>
-						</cfif>
 					</div><!-- /page-header -->
 				</cfoutput>
 
