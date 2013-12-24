@@ -6,6 +6,8 @@
 <cfimport taglib="/farcry/core/tags/container" prefix="con" />
 <cfimport taglib="/farcry/core/tags/webskin" prefix="skin" />
 
+<cfparam name="stobj.title" default="#stobj.label#">
+
 <cfoutput>
 	<div class="page-header">
 		<skin:breadcrumb separator="/" />
