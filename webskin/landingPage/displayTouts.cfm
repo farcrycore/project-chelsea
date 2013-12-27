@@ -4,7 +4,7 @@
 <!--- import tag libraries --->
 <cfimport taglib="/farcry/core/tags/webskin" prefix="skin" />
 
-<cfloop from="1" to="#arrayLen(stObj.aTouts)#" index="i" step="2">
+<cfloop from="1" to="#arrayLen(stObj.aTouts)#" index="i" step="3">
 
 	<cfoutput>
 		<div class="row">
@@ -15,7 +15,10 @@
 			<cfif arrayLen(stObj.aTouts) GT i>
 				<skin:view objectID="#stObj.aTouts[i+1]#" typename="dmTout" webskin="displayTeaser" />
 			</cfif>
-		
+			<cfif arrayLen(stObj.aTouts) GT i+1>
+				<skin:view objectID="#stObj.aTouts[i+2]#" typename="dmTout" webskin="displayTeaser" />
+			</cfif>
+			
 			<cfoutput>
 		</div>
 		

@@ -14,7 +14,7 @@
 </cfif>
 
 <cfoutput>
-	<div class="span6">
+	<div class="span4">
 		<cfif len(link)>
 			<h2><a href="#link#"#target#>#stObj.title#</a></h2>
 		<cfelse>
@@ -24,7 +24,7 @@
 		<cfif len(link)>
 			<p class="btn-bottom-align"><a href="#link#"#target# class="btn"><i class="icon-share-alt"></i>&nbsp;#stObj.linkLabel#</a></p>
 		</cfif>
-	</div><!-- /span6 -->
+	</div><!-- /span4 -->
 </cfoutput>
 	
 <cfsetting enablecfoutputonly="false">

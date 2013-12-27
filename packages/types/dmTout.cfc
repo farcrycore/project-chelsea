@@ -1,19 +1,23 @@
-<cfcomponent displayname="Touts" hint="Promote internal or external resources." extends="farcry.core.packages.types.types">
+<cfcomponent 
+	extends="farcry.core.packages.types.types"
+	displayname="Touts" 
+	hint="Promote internal or external resources."
+	bObjectBroker="true">
 
-	<cfproperty name="title" type="string"
+	<cfproperty name="title" type="string" required="true" default=""
 		ftSeq="1" ftFieldset="General Details" ftLabel="Title"
-		ftValidation="required"
-		ftHint="Provide a title for this carousel item.">
+		ftValidation="required">
 
 	<cfproperty name="teaser" type="longchar"
 		ftSeq="2" ftFieldset="General Details" ftLabel="Teaser"
 		ftType="longchar"
-		ftValidation="required"	/>
+		ftValidation="required"	ftlimit="500" />
 
 	<cfproperty 
 		name="link" type="UUID" hint="Title Link" required="no" default="" 
-		ftseq="3" ftfieldset="Link Details" ftlabel="Internal Link" ftHint="Select a link from farcry OR enter a URL manually below" 
-		ftType="UUID" ftJoin="dmNavigation,dmNews" ftAllowCreate="false"  />
+		ftseq="3" ftfieldset="Link Details" ftlabel="Internal Link"
+		ftHint="Select a menu or news item OR enter a URL below"
+		ftType="UUID" ftJoin="dmNavigation,dmNews" ftAllowCreate="false"/>
 
 	<cfproperty 
 		name="linkURL" type="string" required="false" default="" 
@@ -22,6 +26,6 @@
 
 	<cfproperty 
 		name="linkLabel" type="string" required="false" default="" 
-		ftseq="5" ftfieldset="Link Details" ftLabel="Link Label" />
+		ftseq="5" ftfieldset="Link Details" ftLabel="Button Label" />
 
 </cfcomponent>
