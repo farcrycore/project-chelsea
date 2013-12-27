@@ -14,6 +14,9 @@
 	<cfset stlocal.pageCat = "">
 </cfif>
 
+<!--- 
+ // view 
+--------------------------------------------------------------------------------->
 <skin:view objectid="#stobj.objectid#" typename="#stobj.typename#" webskin="displayHeaderStandard">
 <skin:view objectid="#request.navid#" typename="dmNavigation" webskin="displayBanner" />
 

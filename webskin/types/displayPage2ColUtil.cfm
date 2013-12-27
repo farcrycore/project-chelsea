@@ -1,5 +1,5 @@
 <cfsetting enablecfoutputonly="true" /> 
-<!--- @@displayname: 2 Column (Utility) --->
+<!--- @@displayname: 2 Column (RH Sidebar) --->
 
 <cfimport taglib="/farcry/core/tags/webskin" prefix="skin" />
 
