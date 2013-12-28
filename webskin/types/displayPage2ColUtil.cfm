@@ -1,9 +1,13 @@
 <cfsetting enablecfoutputonly="true" /> 
 <!--- @@displayname: 2 Column (RH Sidebar) --->
 
+<!--- import tag libraries --->
 <cfimport taglib="/farcry/core/tags/webskin" prefix="skin" />
+<cfimport taglib="/farcry/core/tags/container" prefix="con" />
 
-
+<!--- 
+ // view 
+--------------------------------------------------------------------------------->
 <skin:view objectid="#stobj.objectid#" typename="#stobj.typename#" webskin="displayHeaderStandard">
 <skin:view objectid="#request.navid#" typename="dmNavigation" webskin="displayBanner" />
 
@@ -21,7 +25,9 @@
 		<div class="span3">
             <div class="section">
 				</cfoutput>
-		
+				
+				<con:container label="#stObj.objectID#_sidebar" />
+				
 				<cfoutput>
 			</div>
 		</div>
