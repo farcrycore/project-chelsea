@@ -1,6 +1,5 @@
 <cfsetting enablecfoutputonly="true">
-
-<!--- @@cacheStatus: 1 --->
+<!--- @@displayname: Default Teaser Display --->
 
 <!--- import tag libraries --->
 <cfimport taglib="/farcry/core/tags/webskin" prefix="skin">
