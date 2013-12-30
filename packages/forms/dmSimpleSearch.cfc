@@ -1,5 +1,19 @@
-<cfcomponent displayname="Simple Search" extends="farcry.core.packages.forms.forms"
-	fualias="search" hint="A simple search which does a SQL LIKE filter on dmHTML content.">
+<!--- 
+# Simple Search
+This is justa placeholder to show how a search might work. It only works 
+with Web Pages and won't include your news or other content items. Good 
+choices for proper search engines include:
+
+- FarCry SOLR Pro plugin; 
+	http://jeffcoughlin.github.io/farcrysolrpro/
+- Google Site Search plugin; 
+	https://github.com/farcrycore/plugin-googlesitesearch
+--->
+<cfcomponent 
+	extends="farcry.core.packages.forms.forms"
+	displayname="Simple Search" 
+	fualias="search" 
+	hint="A simple search which does a SQL LIKE filter on dmHTML content.">
 
 
 	<cffunction name="search" returntype="query">

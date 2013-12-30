@@ -40,11 +40,11 @@
 							<skin:genericNav navID="#application.navid.home#" class="nav" depth="2" bActive="true" bIncludeHome="true" />
 	
 							<cfoutput>
-							<!--- hide search for now...
-							<form class="navbar-search pull-right" action="#application.fapi.getLink(alias="search")#">
-								<input type="text" class="search-query" placeholder="Search" />
+							<!--- simple search; placeholder for search plugin --->
+							<form class="navbar-search pull-right" action="/search">
+								<input name="q" type="text" class="search-query" placeholder="Search" />
 							</form><!-- /navbar-search pull-right -->
-							--->
+							
 						</div><!-- /nav-collapse -->
 					</div><!-- /container -->
 				</div><!-- /navbar-inner -->
