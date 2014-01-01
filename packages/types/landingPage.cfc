@@ -1,7 +1,7 @@
 <cfcomponent 
 	extends="farcry.core.packages.types.versions"
 	displayName="Landing Page"
-	hint="Create a landing page." 
+	hint="Create a landing page with carousel and touts. For example, the Home Page." 
 	bFriendly="true" fualias="landing" bUseInTree="true"
 	bObjectBroker="true"
 	icon="fa-home">
