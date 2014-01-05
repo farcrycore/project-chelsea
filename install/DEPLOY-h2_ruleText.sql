@@ -70,6 +70,25 @@
 					DEFAULT NULL
 				
 			
+				
+					,
+					
+					
+					
+					
+					title 
+					
+							
+								varchar(250)
+							
+						
+					
+					NULL
+					
+					
+					DEFAULT NULL
+				
+			
 			
 			);
 			

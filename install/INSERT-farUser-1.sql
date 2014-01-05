@@ -1,0 +1,2 @@
+INSERT INTO farUser (datetimelastupdated,lockedBy,userid,lastupdatedby,createdby,userstatus,failedLogins,datetimecreated,locked,password,ObjectID,label,forgotPasswordHash,ownedby,lGroups) VALUES ( 2014-01-02 18:23:29,'','farcry','farcry_CLIENTUD','installation','active','[{"timestamp":"January, 04 2014 01:56:17 +1100","reason":"Incorrect password"}]',2007-12-17 17:18:19,0,'$2a$10$SR2cu05bXy0CXqzw.rdA1Obm9qOvY9Op/h9TFG8GJma5RlAYkgl/6','E689D150-0C0C-923A-C05D110545136581','farcry','','','SysAdmin' );
+

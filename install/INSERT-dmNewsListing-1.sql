@@ -1,0 +1,2 @@
+INSERT INTO dmNewsListing (bMatchAllKeywords,datetimelastupdated,lockedBy,catNews,lastupdatedby,createdby,datetimecreated,locked,status,Teaser,ObjectID,numNews,label,versionID,title,bPagination,ownedby) VALUES ( 0,2013-12-19 14:59:46,'','','farcry_CLIENTUD','farcry_CLIENTUD',2013-10-16 16:16:46,0,'approved','Here is the news, coming to you every hour upon the hour.','2A1C42D0-3622-11E3-8EF260C547035CDE',15,'Latest News','','Latest News',1,'CDD3B33E-A463-9B75-DC0150D316830765' );
+

@@ -73,6 +73,25 @@
 					
 				
 			
+				
+					,
+					
+					
+					
+					
+					title 
+					nvarchar(250)
+					
+					NULL
+					
+					
+						
+						
+							DEFAULT NULL
+						
+					
+				
+			
 			
 			); 
 			

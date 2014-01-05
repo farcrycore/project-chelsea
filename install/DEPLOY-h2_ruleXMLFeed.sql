@@ -90,7 +90,7 @@
 					NULL
 					
 					
-					DEFAULT 20
+					DEFAULT 15
 				
 			
 				

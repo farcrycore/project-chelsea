@@ -84,6 +84,28 @@
 					
 				
 			
+				
+					,
+					
+					
+					
+					
+					title 
+					
+							
+								varchar(250)
+							
+						
+					
+					NULL
+					
+					
+					
+						DEFAULT NULL
+					
+					
+				
+			
 			
 			); 
 			
