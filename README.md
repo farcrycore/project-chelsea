@@ -37,17 +37,31 @@ Sample content sourced from the [Glitch Encyclopedia Assets](http://www.glitchth
 	[x] modernise gallery
 	[x] modernise facts
 	[x] remove links
-	[ ] modernise feedback
-	[ ] modernise rules
+	[x] modernise feedback
+	[x] modernise rules
 	[x] farcrycms; embargo news dates dashboard panel
 	[x] farcrycms; rss feed for news
-	[ ] farcrycms; feedback since last loggedin dashboard panel
+	[x] farcrycms; feedback since last loggedin dashboard panel
 	[ ] double check all event and news listing respect publishdate embargo
 	[ ] add category count to category menu; news and events
 	[ ] add google maps for event venue location
 	[ ] redo calendars with Bootstrap specific calendar; https://github.com/xero/bootstrap_calendar
+
+
+## Core Issues
+
 	[ ] add page (from parent menu) to tree does not refresh tree on completion
 	[ ] approving underlying content does not approve parent menu item
 	[x] delete /farcry/core/webtop/navajo/_customIcons.cfm
 	[x] prefix rule name on container widget with icon
 	[x] delete /core/tags/webskin/simpleSearch.cfm
+	[ ] sort out validation feedback in forms
+	[ ] purge archive; select typename and remove all archives
+	[ ] sysinfo: variable [OUTPUTERROR] doesn't exist /farcry/core/packages/forms/configRepositories.cfc (line: 247)
+	[ ] category form tool does not respect dmalias setting
+	[ ] webtop overview for category shows "none", even when other categories present
+	[ ] history tab defies explanation at the moment
+	[ ] refactor dashboard.cfc; maybe remove entirely
+	[ ] update skin:pop to include inbuilt bootstrap alert format
+	[x] remove ./webskin/farCOAPI/webtopBodyFixRefObjects.cfm
+	[ ] add link to show profiler modal from tray
