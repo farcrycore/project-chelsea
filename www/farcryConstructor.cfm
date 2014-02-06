@@ -1,5 +1,3 @@
-<cfimport taglib="/farcry/core/tags/farcry" prefix="farcry" />
-
 <!--- 
  // APPLICATION NAME
 --------------------------------------------------------------------------------->
@@ -44,10 +42,7 @@
  	- production settings should be nominated above
  	- any local settings can be made below for specific machine names
 --------------------------------------------------------------------------------->
-<farcry:machineSpecific name="Greyhame.local,greyhame.daemon.com.au,greyhame.bigpond,Olorin.local,olorin.daemon.com.au">
-	<!--- GB: Local MacBook Air --->
-	<cfset this.dsn = "chelsea-local" />
-</farcry:machineSpecific>
+<cfinclude template="../config/_serverSpecificConstructor.cfm">
 
 
 <!--- 
