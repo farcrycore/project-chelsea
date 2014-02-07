@@ -46,6 +46,8 @@ Sample content sourced from the [Glitch Encyclopedia Assets](http://www.glitchth
 	[ ] add category count to category menu; news and events
 	[ ] add google maps for event venue location
 	[ ] redo calendars with Bootstrap specific calendar; https://github.com/xero/bootstrap_calendar
+	[ ] remove dud profile favourites from installation data
+	[ ] remove geoff bowers and email from default farcry profile
 
 
 ## Core Issues
@@ -65,3 +67,6 @@ Sample content sourced from the [Glitch Encyclopedia Assets](http://www.glitchth
 	[ ] update skin:pop to include inbuilt bootstrap alert format
 	[x] remove ./webskin/farCOAPI/webtopBodyFixRefObjects.cfm
 	[ ] add link to show profiler modal from tray
+	[ ] webtop dashboard edits need to reload webtop (currently requires updateapp)
+	[ ] need ability to sort webtop dsahboard contents
+	[ ] webtop dashboards not aligning, no js; works for default only
