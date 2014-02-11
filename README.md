@@ -54,9 +54,6 @@ Sample content sourced from the [Glitch Encyclopedia Assets](http://www.glitchth
 
 	[ ] add page (from parent menu) to tree does not refresh tree on completion
 	[ ] approving underlying content does not approve parent menu item
-	[x] delete /farcry/core/webtop/navajo/_customIcons.cfm
-	[x] prefix rule name on container widget with icon
-	[x] delete /core/tags/webskin/simpleSearch.cfm
 	[ ] sort out validation feedback in forms
 	[ ] purge archive; select typename and remove all archives
 	[ ] sysinfo: variable [OUTPUTERROR] doesn't exist /farcry/core/packages/forms/configRepositories.cfc (line: 247)
@@ -65,7 +62,6 @@ Sample content sourced from the [Glitch Encyclopedia Assets](http://www.glitchth
 	[ ] history tab defies explanation at the moment
 	[ ] refactor dashboard.cfc; maybe remove entirely
 	[ ] update skin:pop to include inbuilt bootstrap alert format
-	[x] remove ./webskin/farCOAPI/webtopBodyFixRefObjects.cfm
 	[ ] add link to show profiler modal from tray
 	[ ] webtop dashboard edits need to reload webtop (currently requires updateapp)
 	[ ] need ability to sort webtop dsahboard contents
