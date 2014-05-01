@@ -42,7 +42,9 @@
  	- production settings should be nominated above
  	- any local settings can be made below for specific machine names
 --------------------------------------------------------------------------------->
-<cfinclude template="../config/_serverSpecificConstructor.cfm">
+<cfif fileExists(expandPath("../config/_serverSpecificConstructor.cfm"))>
+	<cfinclude template="../config/_serverSpecificConstructor.cfm">
+</cfif>
 
 
 <!--- 
