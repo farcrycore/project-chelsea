@@ -24,7 +24,7 @@
  // FARCRY FRAMEWORK SETTINGS
 --------------------------------------------------------------------------------->
 <cfset THIS.locales = "en_AU" /><!--- comma delimited list of supported locales --->
-<cfset THIS.dsn = "chelsea-local" /> 
+<cfset THIS.dsn = "chelsea" /> 
 <cfset THIS.dbType = "mysql" /> 
 <cfset THIS.dbOwner = "" /> 
 
