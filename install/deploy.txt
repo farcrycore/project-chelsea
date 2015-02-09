@@ -1,0 +1,3 @@
+core,https://github.com/farcrycore/core.git,p710
+plugins/farcrycms,https://github.com/farcrycore/plugin-farcrycms.git,master
+projects/chelsea,https://github.com/farcrycore/project-chelsea.git,master
