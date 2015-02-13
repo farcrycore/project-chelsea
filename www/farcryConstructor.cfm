@@ -2,7 +2,7 @@
  // APPLICATION NAME
 --------------------------------------------------------------------------------->
 <cfset THIS.Name = "chelsea" />
-<cfset THIS.displayName = "Chelsea Boots" />
+<cfset THIS.displayName = "Chelsea" />
 
 
 <!--- 
@@ -57,9 +57,9 @@
  webtop url
  	the url stem of your admin webtop
 --------------------------------------------------------------------------------->
-<!--- <cfset THIS.projectDirectoryName = "myproject" /> --->
+<!--- <cfset THIS.projectDirectoryName = "chelsea" /> --->
 <cfset THIS.projectURL = "" />
-<cfset THIS.webtopURL = "/farcry/core/webtop" />
+<cfset THIS.webtopURL = "/webtop" />
 
 
 <!--- 
@@ -69,5 +69,6 @@
 		?updateapp=projectkey
 		?updateall=projectkey
 --------------------------------------------------------------------------------->
-<cfset THIS.updateappKey = "chelsea" />
+<cfset THIS.updateappKey = "farcry" />
+
 

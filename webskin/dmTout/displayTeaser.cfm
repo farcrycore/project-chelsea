@@ -7,7 +7,7 @@
 <cfparam name="target" default="" />
 
 <cfif isValid("UUID",stObj.link)>
-	<cfset link = application.fapi.getLink(objectID=stObj.link,typename="dmNavigation") />	
+	<cfset link = application.fapi.getLink(objectID=stObj.link,type="dmNavigation") />	
 <cfelse>
 	<cfset link = stObj.linkURL />	
 	<cfset target = " target=""_blank""" />
