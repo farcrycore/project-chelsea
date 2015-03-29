@@ -1,6 +1,5 @@
 <cfsetting enablecfoutputonly="true">
 <!--- @@displayname: Footer Standard --->
-<!--- @@cacheStatus: 1 --->
 
 <cfoutput>
 				</div><!-- /conatiner -->
