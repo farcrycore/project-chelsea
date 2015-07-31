@@ -6,34 +6,34 @@
 
 
 <!--- 
- // COLDFUSION ENGINE SETTINGS
+ // CFML ENGINE SETTINGS
 --------------------------------------------------------------------------------->
-<cfset THIS.sessionmanagement = true  />
-<cfset THIS.sessiontimeout = createTimeSpan(0,0,20,0) />
-<cfset THIS.applicationtimeout = createTimeSpan(2,0,0,0) />
-<cfset THIS.clientmanagement = false />
-<cfset THIS.clientstorage = "cookie" />
-<cfset THIS.loginstorage = "cookie" />
-<cfset THIS.scriptprotect = "" />
-<cfset THIS.setclientcookies = true />
-<cfset THIS.setdomaincookies = true />
-<cfset THIS.mappings = structNew() />
+<cfset THIS.sessionmanagement = true >
+<cfset THIS.sessiontimeout = createTimeSpan(0,0,20,0)>
+<cfset THIS.applicationtimeout = createTimeSpan(2,0,0,0)>
+<cfset THIS.clientmanagement = false>
+<cfset THIS.clientstorage = "cookie">
+<cfset THIS.loginstorage = "cookie">
+<cfset THIS.scriptprotect = "">
+<cfset THIS.setclientcookies = true>
+<cfset THIS.setdomaincookies = true>
+<cfset THIS.mappings = structNew()>
 
 
 <!--- 
  // FARCRY FRAMEWORK SETTINGS
 --------------------------------------------------------------------------------->
-<cfset THIS.locales = "en_AU" /><!--- comma delimited list of supported locales --->
-<cfset THIS.dsn = "chelsea" /> 
-<cfset THIS.dbType = "mysql" /> 
-<cfset THIS.dbOwner = "" /> 
-
+<cfset THIS.locales = "en_AU"><!--- comma delimited list of supported locales --->
+<cfset THIS.dsn = "chelsea"> 
+<cfset THIS.dbType = "mysql"> 
+<cfset THIS.dbOwner = ""> 
+<cfset THIS.bUseEnv = true>
 
 <!--- 
  // PLUGINS 
  	list of registered plugins for the app; loaded in order
 --------------------------------------------------------------------------------->
-<cfset THIS.plugins = "farcrycms" /> 
+<cfset THIS.plugins = "farcrycms"> 
 <!--- <cfset THIS.plugins = "farcrycms,googleud,googleAnalytics,cloudinary" />  --->
 
 
@@ -69,6 +69,7 @@
 		?updateapp=projectkey
 		?updateall=projectkey
 --------------------------------------------------------------------------------->
-<cfset THIS.updateappKey = "farcry" />
+<cfset THIS.updateappKey = "chelsea" />
+
 
 
