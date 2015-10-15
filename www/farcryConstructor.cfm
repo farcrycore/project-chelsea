@@ -23,28 +23,18 @@
 <!--- 
  // FARCRY FRAMEWORK SETTINGS
 --------------------------------------------------------------------------------->
-<cfset THIS.locales = "en_AU"><!--- comma delimited list of supported locales --->
+<cfset THIS.bUseEnv = true>
+<cfset THIS.locales = "en_AU">
 <cfset THIS.dsn = "chelsea"> 
 <cfset THIS.dbType = "mysql"> 
 <cfset THIS.dbOwner = ""> 
-<cfset THIS.bUseEnv = true>
+
 
 <!--- 
  // PLUGINS 
  	list of registered plugins for the app; loaded in order
 --------------------------------------------------------------------------------->
 <cfset THIS.plugins = "farcrycms"> 
-<!--- <cfset THIS.plugins = "farcrycms,googleud,googleAnalytics,cloudinary" />  --->
-
-
-<!--- 
- // MACHINE SPECIFIC SETTINGS
- 	- production settings should be nominated above
- 	- any local settings can be made below for specific machine names
---------------------------------------------------------------------------------->
-<cfif fileExists(expandPath("../config/_serverSpecificConstructor.cfm"))>
-	<cfinclude template="../config/_serverSpecificConstructor.cfm">
-</cfif>
 
 
 <!--- 
