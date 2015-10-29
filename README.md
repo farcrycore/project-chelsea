@@ -1,12 +1,14 @@
-project-chelsea
+Project Chelsea
 ===============
 
-Project skeleton based on the Chelsea Bootstrap UI design.
+Project skeleton based on the [Chelsea Bootstrap UI design](https://github.com/Daemonite/chelsea).
+
+For a fully working demo try the [Dockerised Chelsea](https://github.com/modius/chelsea-docker) example.
 
 ## Requirements
 
-- FarCry 7.0 (codename: Shiny)
-- FarCry CMS Plugin (for 7.0)
+- FarCry 7+
+- FarCry CMS Plugin (for 7+)
 
 ## Features
 
@@ -29,19 +31,7 @@ Sample content sourced from the [Glitch Encyclopedia Assets](http://www.glitchth
 
 ## TODO
 
-	[x] wire up SEO properties; missing in all templates
-	[x] refactor childlinks rule for Web Pages
-	[x] wire up simple search
-	[x] fix up Events & add calendar views
 	[ ] increase BODY copy font size
-	[x] modernise gallery
-	[x] modernise facts
-	[x] remove links
-	[x] modernise feedback
-	[x] modernise rules
-	[x] farcrycms; embargo news dates dashboard panel
-	[x] farcrycms; rss feed for news
-	[x] farcrycms; feedback since last loggedin dashboard panel
 	[ ] double check all event and news listing respect publishdate embargo
 	[ ] add category count to category menu; news and events
 	[ ] add google maps for event venue location
@@ -60,9 +50,6 @@ Sample content sourced from the [Glitch Encyclopedia Assets](http://www.glitchth
 	[ ] category form tool does not respect dmalias setting
 	[ ] webtop overview for category shows "none", even when other categories present
 	[ ] history tab defies explanation at the moment
-	[ ] refactor dashboard.cfc; maybe remove entirely
 	[ ] update skin:pop to include inbuilt bootstrap alert format
 	[ ] add link to show profiler modal from tray
 	[ ] webtop dashboard edits need to reload webtop (currently requires updateapp)
-	[ ] need ability to sort webtop dsahboard contents
-	[ ] webtop dashboards not aligning, no js; works for default only
