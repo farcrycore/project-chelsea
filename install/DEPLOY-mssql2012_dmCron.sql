@@ -1,0 +1,20 @@
+CREATE TABLE dmCron(
+datetimelastupdated datetime2(3) NOT NULL DEFAULT {ts '2216-09-26 14:52:03'} ,
+lockedBy nvarchar(250) NULL DEFAULT NULL ,
+lastupdatedby nvarchar(250) NOT NULL DEFAULT '' ,
+endDate datetime2(3) NOT NULL DEFAULT {ts '2216-09-26 14:52:03'} ,
+createdby nvarchar(250) NOT NULL DEFAULT '' ,
+startDate datetime2(3) NOT NULL DEFAULT {ts '2216-09-26 14:52:03'} ,
+datetimecreated datetime2(3) NOT NULL DEFAULT {ts '2216-09-26 14:52:03'} ,
+parameters nvarchar(250) NULL DEFAULT NULL ,
+locked bit NOT NULL DEFAULT 0 ,
+template nvarchar(250) NULL DEFAULT NULL ,
+bAutoStart bit NOT NULL DEFAULT 1 ,
+frequency nvarchar(250) NULL DEFAULT 'daily' ,
+ObjectID nvarchar(50) NOT NULL DEFAULT '' ,
+timeOut decimal(11,0) NULL DEFAULT 60 ,
+title nvarchar(250) NULL DEFAULT NULL ,
+label nvarchar(250) NULL DEFAULT NULL ,
+ownedby nvarchar(250) NULL DEFAULT NULL ,
+description nvarchar(MAX) NULL 
+);

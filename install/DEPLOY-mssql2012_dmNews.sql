@@ -1,0 +1,22 @@
+CREATE TABLE dmNews(
+datetimelastupdated datetime2(3) NOT NULL DEFAULT {ts '2216-09-26 14:52:03'} ,
+lockedBy nvarchar(250) NULL DEFAULT NULL ,
+catNews nvarchar(MAX) NULL ,
+source nvarchar(250) NULL DEFAULT NULL ,
+lastupdatedby nvarchar(250) NOT NULL DEFAULT '' ,
+expiryDate datetime2(3) NULL DEFAULT NULL ,
+createdby nvarchar(250) NOT NULL DEFAULT '' ,
+datetimecreated datetime2(3) NOT NULL DEFAULT {ts '2216-09-26 14:52:03'} ,
+status nvarchar(250) NOT NULL DEFAULT 'draft' ,
+locked bit NOT NULL DEFAULT 0 ,
+Teaser nvarchar(2000) NULL DEFAULT NULL ,
+displayMethod nvarchar(250) NOT NULL DEFAULT 'displayPageStandard' ,
+publishDate datetime2(3) NULL DEFAULT NULL ,
+ObjectID nvarchar(50) NOT NULL DEFAULT '' ,
+teaserImage nvarchar(50) NULL DEFAULT NULL ,
+title nvarchar(250) NULL DEFAULT NULL ,
+versionID nvarchar(50) NULL DEFAULT NULL ,
+label nvarchar(250) NULL DEFAULT NULL ,
+Body nvarchar(MAX) NULL ,
+ownedby nvarchar(250) NULL DEFAULT NULL 
+);
